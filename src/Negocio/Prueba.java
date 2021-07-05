@@ -17,9 +17,9 @@ public class Prueba {
 		
 		//Prueba Primer Caso de Uso
 		Propietario propietario1= new Propietario("Christian", "1721795811", "0984149550", "Conocoto");
-		Mecanico mecanico= new Mecanico("José", "1232321289", "0984568790", "Mitado del Mundo");
+		Mecanico mecanico= new Mecanico("Josï¿½", "1232321289", "0984568790", "Mitado del Mundo");
 		Vehiculo vehiculo= new Vehiculo(propietario1);
-		System.out.println("\nPrueba de Registro de un Vehículo.");
+		System.out.println("\nPrueba de Registro de un Vehï¿½culo.");
 		System.out.println(vehiculos.toString());
 		vehiculos.aniadir(vehiculo);
 		
@@ -32,7 +32,7 @@ public class Prueba {
 		System.out.println(servicios.toString());
 		
 		//Prueba Tercer Caso de Uso
-		System.out.println("\nPrueba de Añadir un Servicio Realizado.");
+		System.out.println("\nPrueba de Aï¿½adir un Servicio Realizado.");
 		FichaTecnica fichaTecnica= new FichaTecnica(vehiculo, mecanico);
 		int menu=0;
 		System.out.println(servicios.toString());
@@ -44,9 +44,10 @@ public class Prueba {
 		System.out.println(fichasTecnicas.toString());
 		
 		//Prueba Cuarto Caso de Uso
-		System.out.println("Nueva unión");
+		System.out.println("Nueva uniï¿½n");
 		
-		//Impresión de la factura
+		//Impresiï¿½n de la factura
 		fichaTecnica.solicitarFactura();
+		// prueba para el commit
 	}
 }

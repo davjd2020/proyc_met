@@ -13,12 +13,6 @@ public class FichaTecnica {
 		this.mecanico = mecanico;
 	}
 	
-	public int getNumFicha() {
-		return numFicha;
-	}
-	public void setNumFicha(int numFicha) {
-		this.numFicha = numFicha;
-	}
 	public Vehiculo getVehiculo() {
 		return vehiculo;
 	}
