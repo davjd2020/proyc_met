@@ -19,7 +19,7 @@ public class Prueba {
 		Propietario propietario1= new Propietario("Christian", "1721795811", "0984149550", "Conocoto");
 		Mecanico mecanico= new Mecanico("José", "1232321289", "0984568790", "Mitado del Mundo");
 		Vehiculo vehiculo= new Vehiculo(propietario1);
-		System.out.println("\nPrueba de Registro de un Vehéculo.");
+		System.out.println("\nPrueba de Registro de un Vehículo.");
 		System.out.println(vehiculos.toString());
 		vehiculos.aniadir(vehiculo);
 		

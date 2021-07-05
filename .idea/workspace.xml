@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dbd0a07-9ab5-46aa-aa1c-ce42bd063e59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Main.java" beforeDir="false" />
+    <list default="true" id="8dbd0a07-9ab5-46aa-aa1c-ce42bd063e59" name="Default Changelist" comment="Merge branch 'main' of https://github.com/davjd2020/proyc_met into main&#10;&#10;# Conflicts:&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Negocio/Prueba.java">
       <change beforePath="$PROJECT_DIR$/src/Negocio/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
