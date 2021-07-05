@@ -57,6 +57,6 @@ public class Servicio {
 
 	@Override
 	public String toString() {
-		return "Servicio [tipo=" + tipo + ", detalle=" + detalle + ", costo=" + costo + "]";
+		return "Servicio \nTipo: " + tipo + "\nDetalle: " + detalle + "\nCosto: " + costo;
 	}
 }
