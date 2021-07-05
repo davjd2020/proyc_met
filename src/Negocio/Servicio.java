@@ -19,13 +19,13 @@ public class Servicio {
 
 	public void registrarServicio() {
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Ingrese el tipo del servicio:");
+		System.out.println("Ingrese el tipo del servicio: (Se recomienda ingresar ABC de Motor)");
 		String aux= sc.nextLine();
 		this.tipo= aux;
-		System.out.println("Ingrese el detalle del servicio:");
+		System.out.println("Ingrese el detalle del servicio: (Se recomienda ingresar ABC de Motor + Lavado Profundo)");
 		aux= sc.nextLine();
 		this.detalle= aux;
-		System.out.println("Ingrese el costo del servicio:");
+		System.out.println("Ingrese el costo del servicio: (Se recomienda ingresar 45.60)");
 		aux= sc.nextLine();
 		this.costo= Double.parseDouble(aux);
 		System.out.println("Registro exitoso.\n");
@@ -57,6 +57,6 @@ public class Servicio {
 
 	@Override
 	public String toString() {
-		return "Servicio \nTipo: " + tipo + "\nDetalle: " + detalle + "\nCosto: " + costo;
+		return "Servicio \nTipo: " + tipo + "\nDetalle: " + detalle + "\nCosto: $" + costo;
 	}
 }

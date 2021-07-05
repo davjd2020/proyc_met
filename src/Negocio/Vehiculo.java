@@ -15,16 +15,16 @@ public class Vehiculo {
 	
 	public void registrarVehiculo(Propietario propietario) {
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Ingrese el tipo del vehículo:");
+		System.out.println("Ingrese el tipo del vehículo: (Se recomienda ingresar Sedan)");
 		String aux= sc.nextLine();
 		this.tipo= aux;
-		System.out.println("Ingrese el modelo del vehículo:");
+		System.out.println("Ingrese el modelo del vehículo: (Se recomienda ingresar Aveo)");
 		aux= sc.nextLine();
 		this.modelo= aux;
-		System.out.println("Ingrese la marca del vehículo:");
+		System.out.println("Ingrese la marca del vehículo: (Se recomienda ingresar Chevrolet)");
 		aux= sc.nextLine();
 		this.marca= aux;
-		System.out.println("Ingrese la matrícula del vehículo:");
+		System.out.println("Ingrese la matrícula del vehículo: (Se recomienda ingresar POV-336)");
 		aux= sc.nextLine();
 		this.matricula= aux;
 		this.propietario= propietario;
@@ -73,7 +73,7 @@ public class Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Vehiculo \nTipo: " + tipo + "\nModelo=" + modelo + "\nMatrícula: " + matricula + "\nPropietario:"
+		return "Vehículo \nTipo: " + tipo + "\nModelo: " + modelo + "\nMatrícula: " + matricula + "\nPropietario: "
 				+ propietario;
 	}
 }

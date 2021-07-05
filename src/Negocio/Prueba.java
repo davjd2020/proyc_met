@@ -36,7 +36,7 @@ public class Prueba {
 		FichaTecnica fichaTecnica= new FichaTecnica(vehiculo, mecanico);
 		int menu=0;
 		System.out.println(servicios.toString());
-		System.out.println("Ingrese el servicio que desea agregar: ");
+		System.out.println("Ingrese el servicio que desea agregar: (Se recomienda ingresar número del 1 al 4)");
 		menu= sc.nextInt();
 		fichaTecnica.registrarServicioRealizado(servicios.getServicios().get(menu-1));
 		System.out.println(fichaTecnica.toString());
