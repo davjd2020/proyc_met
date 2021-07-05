@@ -15,16 +15,16 @@ public class Vehiculo {
 	
 	public void registrarVehiculo(Propietario propietario) {
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Ingrese el tipo del vehículo:");
+		System.out.println("Ingrese el tipo del vehÃ­culo:");
 		String aux= sc.nextLine();
 		this.tipo= aux;
-		System.out.println("Ingrese el modelo del vehículo:");
+		System.out.println("Ingrese el modelo del vehÃ­culo:");
 		aux= sc.nextLine();
 		this.modelo= aux;
-		System.out.println("Ingrese el marca del vehículo:");
+		System.out.println("Ingrese la marca del vehÃ­culo:");
 		aux= sc.nextLine();
 		this.marca= aux;
-		System.out.println("Ingrese la matrícula del vehículo:");
+		System.out.println("Ingrese la matrÃ­cula del vehÃ­culo:");
 		aux= sc.nextLine();
 		this.matricula= aux;
 		this.propietario= propietario;
