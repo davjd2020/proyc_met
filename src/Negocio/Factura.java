@@ -31,11 +31,6 @@ public class Factura {
 	public void calculoTotal() {
 		this.total = this.iva + this.subtotal; 
 	}
-	
-	
-
-
-
 
 	public int getNumFactura() {
 		return numFactura;
@@ -79,8 +74,8 @@ public class Factura {
 
 	@Override
 	public String toString() {
-		return "Factura [numFactura=" + numFactura + ", total=" + total + ", subtotal=" + subtotal + ", descuento="
-				+ descuento + ", formaPago=" + formaPago + ", fecha=" + fecha + "]";
+		return "Factura\nNúmero de Factura: " + numFactura + "\nTotal: " + total + "\nSubtotal: " + subtotal + "\nDescuento: "
+				+ descuento + "\nForma de Pago: " + formaPago + "\nFecha: " + fecha + "\n";
 	} 
 
 }

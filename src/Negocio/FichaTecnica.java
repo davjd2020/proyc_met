@@ -44,7 +44,7 @@ public class FichaTecnica {
 	
 	@Override
 	public String toString() {
-		return "FichaTecnica [numFicha=" + numFicha + ", vehiculo=" + vehiculo + ", servicios=" + servicios.toString()
-				+ ", mecanico=" + mecanico + "]";
+		return "Ficha Técnica\nNúmero Ficha: " + numFicha  + vehiculo + servicios.toString()
+				 + mecanico + "\n";
 	}
 }
