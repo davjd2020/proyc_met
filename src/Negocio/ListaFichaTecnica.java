@@ -18,6 +18,8 @@ public class ListaFichaTecnica {
 		fichasTecnicas.remove(ficha);
 	}
 	
+	
+	
 	@Override
 	public String toString() {
 		String salida="";

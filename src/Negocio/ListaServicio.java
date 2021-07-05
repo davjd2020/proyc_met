@@ -24,6 +24,14 @@ public class ListaServicio {
 	public void quitar(Servicio servicio) {
 		servicios.remove(servicio);
 	}
+	
+	public double valoresServicios() {
+		double subT=0.0;
+		for (Servicio servicio : servicios) {
+			subT += servicio.getCosto();
+		}
+		return subT;
+	}
 
 	@Override
 	public String toString() {

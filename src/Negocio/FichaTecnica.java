@@ -43,6 +43,11 @@ public class FichaTecnica {
 		System.out.println("Servicio Registrado Exitosamente.");
 	}
 	
+	public void solicitarFactura() {
+		GestorFactura gestor = new GestorFactura();
+		gestor.realizarFactura(this);
+	}
+	
 	@Override
 	public String toString() {
 		return "FichaTecnica [numFicha=" + numFicha + ", vehiculo=" + vehiculo + ", servicios=" + servicios.toString()
