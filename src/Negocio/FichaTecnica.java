@@ -12,7 +12,11 @@ public class FichaTecnica {
 		this.servicios = new ListaServicio();
 		this.mecanico = mecanico;
 	}
-	
+
+	public int getNumFicha() {
+		return numFicha;
+	}
+
 	public Vehiculo getVehiculo() {
 		return vehiculo;
 	}
@@ -34,12 +38,11 @@ public class FichaTecnica {
 
 	public void registrarServicioRealizado(Servicio servicio) {
 		this.servicios.aniadir(servicio);
-		System.out.println("Servicio Registrado Exitosamente.");
 	}
 	
-	public void solicitarFactura() {
+	public String solicitarFactura( String metodoPago) {
 		GestorFactura gestor = new GestorFactura();
-		gestor.realizarFactura(this);
+		return gestor.realizarFactura(this, metodoPago);
 	}
 	
 	@Override

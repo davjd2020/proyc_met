@@ -35,7 +35,7 @@ public class ListaServicio {
 
 	@Override
 	public String toString() {
-		String salida="";
+		String salida="\n";
 		int cont=0;
 		for (Servicio servicio : servicios) {
 			cont++;

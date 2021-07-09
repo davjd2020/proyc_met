@@ -7,13 +7,9 @@ public class GestorFactura {
 	private Factura factura;
 	
 	
-	public void realizarFactura(FichaTecnica fichaT) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Ingrese el metodo de pago (1)Efectivo, (2)Tarjeta Crédito (Se recomienda ingresar Efectivo):");
-		String metodoPago = sc.nextLine();
+	public String realizarFactura(FichaTecnica fichaT, String metodoPago) {
 		this.factura = new Factura(metodoPago, fichaT );
-		
-		System.out.println(this.factura.toString());
+		return this.factura.toString();
 	}
 	
 	public void reembolsarFactura() {

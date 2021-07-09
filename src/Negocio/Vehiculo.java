@@ -9,26 +9,17 @@ public class Vehiculo {
 	private String matricula;
 	private Propietario propietario;
 
-	public Vehiculo(Propietario propietario) {
-		registrarVehiculo(propietario);
+	public Vehiculo(Propietario propietario, String tipo, String modelo, String marca, String matricula) {
+		/*registrarVehiculo(propietario);*/
+		registrarVehiculo(propietario,tipo, modelo, marca, matricula);
 	}
 	
-	public void registrarVehiculo(Propietario propietario) {
-		Scanner sc= new Scanner(System.in);
-		System.out.println("Ingrese el tipo del vehículo: (Se recomienda ingresar Sedan)");
-		String aux= sc.nextLine();
-		this.tipo= aux;
-		System.out.println("Ingrese el modelo del vehículo: (Se recomienda ingresar Aveo)");
-		aux= sc.nextLine();
-		this.modelo= aux;
-		System.out.println("Ingrese la marca del vehículo: (Se recomienda ingresar Chevrolet)");
-		aux= sc.nextLine();
-		this.marca= aux;
-		System.out.println("Ingrese la matrícula del vehículo: (Se recomienda ingresar POV-336)");
-		aux= sc.nextLine();
-		this.matricula= aux;
+	public void registrarVehiculo(Propietario propietario, String tipo, String modelo, String marca, String matricula) {
+		this.tipo= tipo;
+		this.modelo= modelo;
+		this.marca= marca;
+		this.matricula= matricula;
 		this.propietario= propietario;
-		System.out.println("Registro exitoso.\n");
 	}
 
 	public String getTipo() {
@@ -73,7 +64,7 @@ public class Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Vehículo \nTipo: " + tipo + "\nModelo: " + modelo + "\nMatrícula: " + matricula + "\nPropietario: "
+		return "\nVehículo \nTipo: " + tipo + "\nModelo: " + modelo + "\nMatrícula: " + matricula + "\n"
 				+ propietario;
 	}
 }

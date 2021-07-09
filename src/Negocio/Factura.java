@@ -8,6 +8,7 @@ public class Factura {
 	private double descuento;
 	private String formaPago;
 	private Fecha fecha;
+	private int numFicha;
 	
 	public Factura(String formaPago, FichaTecnica ficha) {
 		this.numFactura++ ;
@@ -17,6 +18,7 @@ public class Factura {
 		this.descuento = 0.0;
 		this.formaPago = formaPago;
 		this.fecha = new Fecha("04/07/2021");
+		this.numFicha = ficha.getNumFicha();
 	}
 	
 	public void calculoIva() {
@@ -74,8 +76,8 @@ public class Factura {
 
 	@Override
 	public String toString() {
-		return "Factura\nNúmero de Factura: " + numFactura + "\nTotal: " + total + "\nSubtotal: " + subtotal + "\nDescuento: "
-				+ descuento + "\nForma de Pago: " + formaPago + "\nFecha: " + fecha + "\n";
+		return "\nFactura\nNúmero de Factura: " + numFactura +"\nNúmero de Ficha Asociada: " + numFicha + "\nTotal: " + total + "\nSubtotal: " + subtotal
+				+"\nIva: " +iva + "\nDescuento: " + descuento + "\nForma de Pago: " + formaPago + "\nFecha: " + fecha;
 	} 
 
 }

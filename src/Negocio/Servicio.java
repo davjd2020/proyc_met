@@ -8,16 +8,15 @@ public class Servicio {
 	private double costo;
 	
 	public Servicio() {
-		registrarServicio();
+
 	}
 	
 	public Servicio(String tipo, String detalle, double costo) {
-		this.tipo = tipo;
-		this.detalle = detalle;
-		this.costo = costo;
+		registrarServicio(tipo, detalle, costo);
 	}
 
-	public void registrarServicio() {
+	public void registrarServicio(String tipo, String detalle, double costo) {
+		/*
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Ingrese el tipo del servicio: (Se recomienda ingresar ABC de Motor)");
 		String aux= sc.nextLine();
@@ -29,6 +28,11 @@ public class Servicio {
 		aux= sc.nextLine();
 		this.costo= Double.parseDouble(aux);
 		System.out.println("Registro exitoso.\n");
+
+		 */
+		this.tipo= tipo;
+		this.detalle= detalle;
+		this.costo= costo;
 	}
 	
 	public String getTipo() {
