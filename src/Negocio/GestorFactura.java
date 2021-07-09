@@ -9,7 +9,7 @@ public class GestorFactura {
 	
 	public String realizarFactura(FichaTecnica fichaT, String metodoPago) {
 		this.factura = new Factura(metodoPago, fichaT );
-		return this.factura.toString();
+		return this.factura.toString() + "\nNúmero Ficha: " + fichaT.getNumFicha();
 	}
 	
 	public void reembolsarFactura() {

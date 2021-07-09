@@ -20,7 +20,7 @@ public class ListaVehiculo {
 	
 	@Override
 	public String toString() {
-		if(vehiculos.isEmpty()) {
+		if(!vehiculos.isEmpty()) {
 			return "Vehículos\n" + enumerarVehiculos();
 		}else{
 			return "";

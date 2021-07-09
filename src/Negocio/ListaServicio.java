@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ListaServicio {
 	private ArrayList<Servicio> servicios;
 
+
 	public ListaServicio() {
 		this.servicios = new ArrayList<Servicio>();
 	}
@@ -26,16 +27,20 @@ public class ListaServicio {
 	}
 	
 	public double valoresServicios() {
-		double subT=0.0;
-		for (Servicio servicio : servicios) {
-			subT += servicio.getCosto();
+		return obtenerSubtotal();
+	}
+
+	private double obtenerSubtotal() {
+		double subT=0;
+		for (int i=0; i < servicios.size(); i++) {
+			subT += servicios.get(i).getCosto();
 		}
 		return subT;
 	}
 
 	@Override
 	public String toString() {
-		if(servicios.isEmpty()) {
+		if(!servicios.isEmpty()) {
 			return "Servicios\n" + enumerarServicios();
 		}else{
 			return "";
