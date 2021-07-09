@@ -35,12 +35,18 @@ public class ListaServicio {
 
 	@Override
 	public String toString() {
-		String salida="\n";
-		int cont=0;
-		for (Servicio servicio : servicios) {
-			cont++;
-			salida+=(cont+": "+servicio.toString()+"\n");
+		if(servicios.isEmpty()) {
+			return "Servicios\n" + enumerarServicios();
+		}else{
+			return "";
 		}
-		return salida;
+	}
+
+	public String enumerarServicios(){
+		String cadenaServicios="";
+		for (int i = 0; i < servicios.size(); i++) {
+			cadenaServicios+=((i+1)+": "+servicios.get(i).toString()+"\n");
+		}
+		return cadenaServicios;
 	}
 }

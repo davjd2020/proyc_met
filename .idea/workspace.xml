@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dbd0a07-9ab5-46aa-aa1c-ce42bd063e59" name="Default Changelist" comment="">
+    <list default="true" id="8dbd0a07-9ab5-46aa-aa1c-ce42bd063e59" name="Default Changelist" comment="Cambios To String 5.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Negocio/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/FichaTecnica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/FichaTecnica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/GestorFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/GestorFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/ListaFichaTecnica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/ListaFichaTecnica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/ListaMecanico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/ListaMecanico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/ListaPropietario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/ListaPropietario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Negocio/ListaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/ListaServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Mecanico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Mecanico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Propietario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Propietario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Negocio/ListaVehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/ListaVehiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Negocio/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Servicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Negocio/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Negocio/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

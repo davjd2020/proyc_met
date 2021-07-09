@@ -20,10 +20,18 @@ public class ListaPropietario {
 	
 	@Override
 	public String toString() {
-		String salida="";
-		for (Propietario propietario: propietarios) {
-			salida+=(propietario.toString()+"\n");
+		if(!propietarios.isEmpty()) {
+			return "Propietarios de los Vehículos" + enumerarPropietarios();
+		}else{
+			return "";
 		}
-		return salida;
+	}
+
+	public String enumerarPropietarios(){
+		String cadenaPropietarios="";
+		for (Propietario propietario: propietarios) {
+			cadenaPropietarios+=(propietario.toString()+"\n");
+		}
+		return cadenaPropietarios;
 	}
 }

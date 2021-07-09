@@ -17,17 +17,20 @@ public class ListaFichaTecnica {
 	public void quitar(FichaTecnica ficha) {
 		fichasTecnicas.remove(ficha);
 	}
-	
-	
-	
-	@Override
+
 	public String toString() {
-		String salida="";
-		for (FichaTecnica ficha : fichasTecnicas) {
-			salida+=(ficha.toString()+"\n");
+		if(!fichasTecnicas.isEmpty()) {
+			return "Fichas Técnicas:\n" + enumerarFichas();
+		}else{
+			return "";
 		}
-		return salida;
 	}
 
-	// COMENTARIO FICHA TECNICA
+	public String enumerarFichas(){
+		String fichas="";
+		for (FichaTecnica ficha : fichasTecnicas) {
+			fichas+=(ficha.toString()+"\n");
+		}
+		return fichas;
+	}
 }

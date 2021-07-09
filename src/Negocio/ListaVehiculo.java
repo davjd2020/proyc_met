@@ -20,10 +20,18 @@ public class ListaVehiculo {
 	
 	@Override
 	public String toString() {
-		String salida="";
-		for (Vehiculo vehiculo : vehiculos) {
-			salida+=(vehiculo.toString()+"\n");
+		if(vehiculos.isEmpty()) {
+			return "Vehículos\n" + enumerarVehiculos();
+		}else{
+			return "";
 		}
-		return salida;
+	}
+
+	public String enumerarVehiculos(){
+		String cadenaVehiculos="";
+		for (Vehiculo vehiculo : vehiculos) {
+			cadenaVehiculos+=(vehiculo.toString()+"\n");
+		}
+		return cadenaVehiculos;
 	}
 }

@@ -20,10 +20,18 @@ public class ListaMecanico {
 	
 	@Override
 	public String toString() {
-		String salida="";
-		for (Mecanico mecanico: mecanicos) {
-			salida+=(mecanico.toString()+"\n");
+		if(!mecanicos.isEmpty()) {
+			return "Mecánicos:\n" + enumerarMecanicos();
+		}else{
+			return "";
 		}
-		return salida;
+	}
+
+	public String enumerarMecanicos(){
+		String cadenaMecanicos="";
+		for (Mecanico mecanico: mecanicos) {
+			cadenaMecanicos+=(mecanico.toString()+"\n");
+		}
+		return cadenaMecanicos;
 	}
 }
